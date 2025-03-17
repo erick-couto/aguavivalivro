@@ -15,8 +15,8 @@
 
         /* Estilo geral */
         body {
-            background-color: #f0f4f8;
-            color: #333;
+            background-color: #000000; /* Fundo preto */
+            color: #ffffff; /* Texto branco para contraste */
             line-height: 1.6;
         }
 
@@ -47,7 +47,7 @@
         }
 
         .book-cover img {
-            max-width: 100%;
+            max-width: 200px; /* Tamanho reduzido da capa */
             height: auto;
             border: 5px solid #2a5298;
             border-radius: 10px;
@@ -59,13 +59,13 @@
 
         .synopsis h2 {
             font-size: 1.8em;
-            color: #1e3c72;
+            color: #1e3c72; /* Mantive azul escuro para destaque */
             margin-bottom: 20px;
         }
 
         .synopsis p {
             font-size: 1.1em;
-            color: #555;
+            color: #ffffff; /* Texto branco para contraste */
         }
 
         .author {
@@ -74,13 +74,13 @@
 
         .author h2 {
             font-size: 1.8em;
-            color: #1e3c72;
+            color: #1e3c72; /* Azul escuro para destaque */
             margin-bottom: 20px;
         }
 
         .author p {
             font-size: 1.1em;
-            color: #555;
+            color: #ffffff; /* Texto branco */
         }
 
         /* Botões */
@@ -124,6 +124,9 @@
             .main-content {
                 padding: 20px;
             }
+            .book-cover img {
+                max-width: 150px; /* Ajuste para telas menores */
+            }
         }
     </style>
 </head>
@@ -138,7 +141,7 @@
     <div class="main-content">
         <!-- Capa do livro -->
         <div class="book-cover">
-            <img src="visualelectric-1742173901931.png" alt="Capa de Água Viva e a Rainha Neuza">
+            <img src="https://via.placeholder.com/300x450.png?text=Capa+do+Livro" alt="Capa de Água Viva e a Rainha Neuza">
         </div>
 
         <!-- Sinopse -->
@@ -162,7 +165,7 @@
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2025 Erick B. Couto. Todos os direitos reservados.</p>
+        <p>© 2025 Erick B. Couto. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

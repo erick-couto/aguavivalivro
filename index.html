@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Água Viva e a Rainha Neuza</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <style>
         /* Reset básico */
         * {
@@ -15,114 +23,113 @@
 
         /* Estilo geral */
         body {
-            background-color: #000000; /* Fundo preto */
-            color: #ffffff; /* Texto branco para contraste */
+            background-color: #000000;
+            color: #ffffff;
             line-height: 1.6;
         }
 
         /* Cabeçalho */
         header {
-            background-image: url('fundo-topo.png'); /* Imagem de fundo */
-            background-size: cover; /* Cobrir toda a área */
-            background-position: center; /* Centralizar */
+            background-image: url('fundo-topo.png');
+            background-size: cover;
+            background-position: center;
             color: white;
             padding: 60px 20px;
             display: flex;
-            flex-direction: column; /* Empilhar conteúdo verticalmente */
-            align-items: center; /* Centralizar horizontalmente */
-            position: relative; /* Para posicionar os ícones */
+            flex-direction: column;
+            align-items: center;
+            position: relative;
         }
 
         .header-content {
             display: flex;
-            align-items: center; /* Centralizar verticalmente */
-            max-width: 1000px; /* Limite de largura */
+            align-items: center;
+            max-width: 1000px;
             width: 100%;
         }
 
         .book-cover img {
-            max-width: 200px; /* Tamanho reduzido da capa */
+            max-width: 200px;
             height: auto;
-            border: 5px solid #ffffff; /* Borda branca */
-            border-radius: 50%; /* Formato redondo */
-            margin-right: 30px; /* Espaço entre capa e título */
+            border: 5px solid #ffffff;
+            border-radius: 50%;
+            margin-right: 30px;
         }
 
         .title-text {
-            text-align: center; /* Alinhar texto ao centro */
+            text-align: center;
         }
 
         header h1 {
             font-size: 2.5em;
-            color: white; /* Título em branco */
+            color: white;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para contraste */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
-        /* Botões de redes sociais e citação no cabeçalho */
         .social-buttons {
             position: absolute;
-            top: 20px; /* Posicionar mais no topo */
-            right: 20px; /* Alinhar à direita */
+            top: 20px;
+            right: 20px;
             display: flex;
-            flex-direction: column; /* Empilhar citação e ícones */
-            align-items: flex-end; /* Alinhar à direita */
+            flex-direction: column;
+            align-items: flex-end;
         }
 
         .social-buttons .quote {
-            font-family: Georgia, serif; /* Fonte recomendada para citações */
-            font-style: italic; /* Itálico */
+            font-family: Georgia, serif;
+            font-style: italic;
             font-size: 1.1em;
-            color: #1e90ff; /* Azul claro */
-            margin-bottom: 10px; /* Espaço entre citação e ícones */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra leve para contraste */
-            background-color: rgba(50, 50, 50, 0.8); /* Fundo mais escuro com 20% de transparência */
-            padding: 8px 12px; /* Espaçamento interno */
-            border-radius: 10px; /* Cantos arredondados */
+            color: #1e90ff;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            background-color: rgba(50, 50, 50, 0.8);
+            padding: 8px 12px;
+            border-radius: 10px;
         }
 
         .social-icons {
-            display: flex; /* Alinhar ícones horizontalmente */
+            display: flex;
         }
 
         .social-buttons a {
             display: inline-block;
-            width: 36px; /* Tamanho reduzido dos ícones */
+            width: 36px;
             height: 36px;
-            margin: 5px; /* Espaçamento reduzido */
+            margin: 5px;
             text-decoration: none;
-            border-radius: 50%; /* Formato circular */
-            overflow: hidden; /* Garantir que a imagem fique dentro do círculo */
+            border-radius: 50%;
+            overflow: hidden;
             transition: transform 0.3s;
         }
 
         .social-buttons a:hover {
-            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+            transform: scale(1.1);
         }
 
         .social-buttons a img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ajustar imagem ao círculo */
+            object-fit: cover;
         }
 
         /* Menu de navegação */
         nav {
-            background-color: #1e3c72; /* Azul escuro do tema */
+            background-color: #1e3c72;
             padding: 15px 0;
             text-align: center;
         }
 
         .nav-menu {
             display: flex;
-            justify-content: center; /* Centralizar horizontalmente */
-            gap: 30px; /* Espaçamento entre os itens */
-            max-width: 1000px; /* Alinhar com o conteúdo do cabeçalho */
+            justify-content: center;
+            gap: 30px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
         .nav-menu a {
-            color: #ffffff; /* Texto branco */
+            color: #ffffff;
             text-decoration: none;
             font-size: 1.1em;
             padding: 10px 15px;
@@ -130,55 +137,61 @@
         }
 
         .nav-menu a:hover {
-            background-color: #2a5298; /* Azul mais claro no hover */
+            background-color: #2a5298;
             border-radius: 5px;
         }
 
         /* Seção principal com colunas */
         .main-content {
-            max-width: 1000px; /* Alinhar com o cabeçalho */
+            max-width: 1000px;
             margin: 0 auto;
             padding: 40px 20px;
             display: flex;
-            gap: 20px; /* Espaço entre colunas */
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .column-container {
+            display: flex;
+            gap: 20px;
         }
 
         .column-left {
-            flex: 2; /* 2/3 do espaço (66.67%) */
+            flex: 2;
             text-align: left;
             display: flex;
             flex-direction: column;
         }
 
         .column-right {
-            flex: 1; /* 1/3 do espaço (33.33%) */
-            text-align: left; /* Alinhar texto à esquerda */
+            flex: 1;
+            text-align: left;
             display: flex;
             flex-direction: column;
-            gap: 20px; /* Espaço entre os blocos na coluna direita */
+            gap: 20px;
         }
 
         .column-right-upper {
-            background-color: #2a3b5a; /* Azul acinzentado sutil */
+            background-color: #2a3b5a;
             padding: 20px;
-            border-radius: 15px; /* Cantos arredondados */
-            height: fit-content; /* Ajusta a altura ao conteúdo */
-            align-self: flex-start; /* Alinha ao topo da coluna */
+            border-radius: 15px;
+            height: fit-content;
+            align-self: flex-start;
         }
 
         .synopsis h2, .where-to-buy h2, .curiosities h2 {
             font-size: 1.8em;
-            color: #1e3c72; /* Azul escuro para destaque */
+            color: #1e3c72;
             margin-bottom: 20px;
         }
 
         .synopsis p, .where-to-buy p {
             font-size: 1.1em;
-            color: #ffffff; /* Texto branco */
+            color: #ffffff;
         }
 
         .where-to-buy a {
-            color: #1e90ff; /* Azul claro para links */
+            color: #1e90ff;
             text-decoration: none;
         }
 
@@ -187,48 +200,48 @@
         }
 
         .author {
-            font-family: Georgia, serif; /* Nova fonte para o bloco do autor */
+            font-family: Georgia, serif;
         }
 
         .author h2 {
             font-size: 1.8em;
-            color: #1e90ff; /* Azul claro para destacar no fundo diferente */
+            color: #1e90ff;
             margin-bottom: 15px;
-            text-align: center; /* Centralizar o título */
+            text-align: center;
         }
 
         .author img {
-            width: 80px; /* Tamanho menor que a capa do livro */
+            width: 80px;
             height: 80px;
-            border: 3px solid #ffffff; /* Borda branca, mais fina */
-            border-radius: 50%; /* Formato redondo */
-            float: left; /* Flutuar à esquerda */
-            margin: 0 15px 15px 0; /* Espaçamento uniforme: 0 topo, 15px direita, 15px baixo, 0 esquerda */
-            object-fit: cover; /* Ajustar imagem ao círculo */
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            float: left;
+            margin: 0 15px 15px 0;
+            object-fit: cover;
         }
 
         .author p {
-            font-size: 0.9em; /* Texto menor e mais compacto */
-            color: #ffffff; /* Texto branco */
-            line-height: 1.4; /* Reduzir espaçamento entre linhas */
-            margin: 0; /* Remover margens extras */
+            font-size: 0.9em;
+            color: #ffffff;
+            line-height: 1.4;
+            margin: 0;
         }
 
         .curiosities {
-            font-family: Georgia, serif; /* Mesma fonte dos outros blocos */
+            font-family: Georgia, serif;
             text-align: justify;
         }
 
         .curiosities ul {
-            list-style-type: disc; /* Bullets padrão */
-            padding-left: 40px; /* Espaçamento à esquerda para os bullets */
-            font-size: 0.9em; /* Mesmo tamanho do texto do autor */
-            color: #ffffff; /* Texto branco */
-            line-height: 1.4; /* Mesmo espaçamento de linha do autor */
+            list-style-type: disc;
+            padding-left: 40px;
+            font-size: 0.9em;
+            color: #ffffff;
+            line-height: 1.4;
         }
 
         .curiosities li {
-            margin-bottom: 15px; /* Espaçamento entre os itens da lista */
+            margin-bottom: 15px;
         }
 
         /* Estilo do banner */
@@ -236,44 +249,45 @@
             background-image: url('fundo-banner.png');
             background-size: cover;
             background-position: center;
-            padding: 20px; /* Reduzi o padding para ajustar o espaço */
+            padding: 20px;
             text-align: center;
-            margin-top: 20px;
+            margin-bottom: 20px;
             border-radius: 15px;
-            height: 200px; /* Altura fixa para posicionamento */
+            height: 200px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Espaço entre topo e botão no fundo */
-            font-family: Georgia, serif; /* Mesma fonte do autor */
-            align-items: center; /* Centraliza horizontalmente os filhos */
+            justify-content: space-between;
+            font-family: Georgia, serif;
+            align-items: center;
+            width: 100%;
         }
 
         .banner h3 {
-            font-size: 1.6em; /* Reduzi de 1.8em para 1.6em */
+            font-size: 1.6em;
             color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            margin-bottom: 8px; /* Reduzi o espaçamento entre os textos */
+            margin-bottom: 8px;
         }
 
         .banner p {
-            font-size: 0.9em; /* Reduzi de 1em para 0.9em */
+            font-size: 0.9em;
             color: #ffffff;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
         .banner a {
             display: inline-block;
-            padding: 8px 12px; /* Padding pequeno em relação ao texto */
-            background-color: #FFC107; /* Amarelo âmbar vibrante */
-            color: #000000; /* Texto preto */
+            padding: 8px 12px;
+            background-color: #FFC107;
+            color: #000000;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 1em; /* Reduzi de 1.1em para 1em para consistência */
+            font-size: 1em;
             transition: background-color 0.3s;
         }
 
         .banner a:hover {
-            background-color: #FFA000; /* Tom um pouco mais escuro para o hover */
+            background-color: #FFA000;
         }
 
         /* Botões (mantive o estilo no CSS, mas não está em uso no HTML) */
@@ -310,50 +324,52 @@
         /* Responsividade */
         @media (max-width: 600px) {
             header {
-                padding: 40px 10px; /* Reduzir padding */
+                padding: 40px 10px;
             }
             .header-content {
-                flex-direction: column; /* Empilhar em telas pequenas */
+                flex-direction: column;
                 text-align: center;
             }
             .book-cover img {
-                max-width: 150px; /* Ajuste para telas menores */
+                max-width: 150px;
                 margin-right: 0;
-                margin-bottom: 20px; /* Espaço abaixo da capa */
+                margin-bottom: 20px;
             }
             .title-text {
-                text-align: center; /* Manter centralizado */
+                text-align: center;
             }
             header h1 {
                 font-size: 1.8em;
             }
             .social-buttons {
-                position: static; /* Remover posicionamento absoluto em telas pequenas */
-                margin-top: 20px; /* Adicionar espaço acima */
-                align-items: center; /* Centralizar citação e ícones */
+                position: static;
+                margin-top: 20px;
+                align-items: center;
             }
             .social-buttons .quote {
                 font-size: 1em;
             }
             .nav-menu {
-                flex-direction: column; /* Empilhar menu em telas pequenas */
-                gap: 10px; /* Reduzir espaçamento */
+                flex-direction: column;
+                gap: 10px;
             }
             .main-content {
-                flex-direction: column; /* Empilhar colunas em telas pequenas */
                 padding: 20px 10px;
             }
+            .column-container {
+                flex-direction: column;
+            }
             .column-left, .column-right {
-                flex: none; /* Remover proporções fixas */
-                width: 100%; /* Ocupar toda a largura */
+                flex: none;
+                width: 100%;
             }
             .author img {
-                float: none; /* Remover float em telas pequenas */
-                display: block; /* Centralizar imagem */
-                margin: 0 auto 15px; /* Centralizar e adicionar espaço abaixo */
+                float: none;
+                display: block;
+                margin: 0 auto 15px;
             }
             .author p {
-                text-align: center; /* Centralizar texto */
+                text-align: center;
             }
         }
     </style>
@@ -373,16 +389,16 @@
         <div class="social-buttons">
             <div class="quote">"No meio da tempestade, ele encontrou não apenas o mar, mas a si mesmo."</div>
             <div class="social-icons">
-                <a href="https://www.instagram.com/aguavivalivro/" class="instagram" target="_blank">
+                <a href="https://www.instagram.com/aguavivalivro/" class="instagram" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'Instagram'});">
                     <img src="icones/instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61573939827304" class="facebook" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=61573939827304" class="facebook" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'Facebook'});">
                     <img src="icones/facebook.png" alt="Facebook">
                 </a>
-                <a href="https://x.com/aguavivalivro" class="x" target="_blank">
+                <a href="https://x.com/aguavivalivro" class="x" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'X'});">
                     <img src="icones/x.png" alt="X">
                 </a>
-                <a href="https://wa.me/5522999002529" class="whatsapp" target="_blank">
+                <a href="https://wa.me/5522999002529" class="whatsapp" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'WhatsApp'});">
                     <img src="icones/whatsapp.png" alt="WhatsApp">
                 </a>
             </div>
@@ -402,58 +418,63 @@
 
     <!-- Conteúdo principal com colunas -->
     <div class="main-content">
-        <!-- Coluna Esquerda (2/3) - Sinopse, Banner e Onde Comprar -->
-        <div class="column-left">
-            <div id="livro" class="synopsis" style="font-family: Georgia, serif; text-align: justify;">
-                <h2 style="text-align: center; font-size: 1.8em;">O Livro</h2>
-                <p style="text-indent: 20px; margin-bottom: 15px;">
-                    Gustavo nunca viu o mar. Cresceu em uma cidade pequena, onde o futuro parecia já escrito. Mas um chamado inesperado despertou algo dentro dele, precisava partir e encontrar o mar.
-                </p>
-                <p style="text-indent: 20px; margin-bottom: 15px;">
-                    Em sua jornada enfrentará tempestades que vão muito além das ondas revoltas. Entre encontros inesperados, segredos do passado e o peso de uma vida que insiste em puxá-lo de volta, ele descobrirá que o maior desafio não está no oceano, mas dentro de si mesmo.
-                </p>
-                <p style="text-indent: 20px; margin-bottom: 15px;">
-                    <b><i>Água Viva e a Rainha Neuza</i></b> é um romance de formação ambientado em 1992, um tempo sem internet, onde as respostas vinham dos livros, das ruas e das experiências vividas. Uma história para quem já se perdeu entre as páginas amareladas de um velho atlas, sentiu a liberdade de pedalar sem destino ou se encantou com a magia do desconhecido. Um convite nostálgico para reviver o passado e embarcar em uma jornada de autodescoberta.
-                </p>
+        <!-- Banner no topo, alinhado horizontalmente com "O Autor" -->
+        <div class="banner">
+            <div>
+                <h3>Compre na Amazon</h3>
+                <p>O livro impresso está com 40% de desconto sobre o preço de capa durante o período da pré-venda, por apenas R$ 31,99</p>
+                <p>O E-book está disponível imediatamente por R$ 19,90 ou você poderá ler gratuitamente se for cliente Amazon Unlimited.</p>
             </div>
-            <!-- Novo bloco de banner -->
-            <div class="banner">
-                <div>
-                    <h3>Lançamento em Maio</h3>
-                    <p>Cadastre-se gratuitamente e ganhe um desconto de 10%<br>na compra do livro através dos canais oficiais</p>
-                </div>
-                <a href="https://forms.gle/cmWpnBPMS2PNcWsd6" target="_blank">Cadastre-se</a>
-            </div>
-            <!-- Novo bloco "Onde Comprar" -->
-            <div id="onde-comprar" class="where-to-buy" style="font-family: Georgia, serif; text-align: justify; margin-top: 20px;">
-                <h2 style="text-align: center; font-size: 1.8em;">Onde Comprar</h2>
-                <p style="text-indent: 20px; margin-bottom: 15px;">
-                    O livro estará disponível na Amazon, tanto na versão impressa quanto e-book, e em livrarias tradicionais espalhadas pelo Brasil. Você poderá ver uma lista de livrarias parceiras que terão o livro físico para a venda aqui no site após o lançamento.
-                </p>
-                <p style="text-indent: 20px; margin-bottom: 15px;">
-                    A data de lançamento prevista é no início de Maio de 2025, fique atento ao site e às redes sociais que poderemos antecipá-la. Se você é uma livraria e gostaria de vender nosso livro clique <a href="mailto:erickcouto@erickcouto.eti.br?subject=Livraria%20parceira">aqui</a>.
-                </p>
-            </div>
+            <a href="https://a.co/d/4jRzt40" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Banner', 'event_label': 'Ver na Amazon'});">Ver na Amazon</a>
         </div>
-        <!-- Coluna Direita (1/3) - O Autor e Curiosidades -->
-        <div class="column-right">
-            <div class="column-right-upper">
-                <div id="autor" class="author" style="font-family: Georgia, serif; text-align: justify;">
-                    <h2 style="text-align: center; font-size: 1.8em;">O Autor</h2>
-                    <img src="autor.jpeg" alt="Foto de Erick Couto" style="width: 80px; height: 80px; border: 3px solid #ffffff; border-radius: 50%; float: left; margin: 0 15px 15px 0; object-fit: cover;">
-                    <p style="margin-bottom: 15px;">Erick Couto, fluminense de Araruama, na Região dos Lagos do RJ, inspira-se nas belezas naturais da região.</p>
-                    <p style="margin-bottom: 15px;">Com MBA em Gestão Estratégica de TI pela FGV, consolidou uma carreira em tecnologia, atuando em grandes empresas.</p>
-                    <p style="margin-bottom: 15px;">Hoje, reacende suas origens no jornalismo, curso iniciado na ESPM quando jovem, dedicando-se a contos e romances. Suas narrativas misteriosas e cativantes prendem o leitor, remetendo ao universo envolvente de seus contos de infância.</p>
+
+        <!-- Container para as colunas esquerda e direita -->
+        <div class="column-container">
+            <!-- Coluna Esquerda (2/3) - Sinopse e Onde Comprar -->
+            <div class="column-left">
+                <div id="livro" class="synopsis" style="font-family: Georgia, serif; text-align: justify;">
+                    <h2 style="text-align: center; font-size: 1.8em;">O Livro</h2>
+                    <p style="text-indent: 20px; margin-bottom: 15px;">
+                        Gustavo nunca viu o mar. Cresceu em uma cidade pequena, onde o futuro parecia já escrito. Mas um chamado inesperado despertou algo dentro dele, precisava partir e encontrar o mar.
+                    </p>
+                    <p style="text-indent: 20px; margin-bottom: 15px;">
+                        Em sua jornada enfrentará tempestades que vão muito além das ondas revoltas. Entre encontros inesperados, segredos do passado e o peso de uma vida que insiste em puxá-lo de volta, ele descobrirá que o maior desafio não está no oceano, mas dentro de si mesmo.
+                    </p>
+                    <p style="text-indent: 20px; margin-bottom: 15px;">
+                        <b><i>Água Viva e a Rainha Neuza</i></b> é um romance de formação ambientado em 1992, um tempo sem internet, onde as respostas vinham dos livros, das ruas e das experiências vividas. Uma história para quem já se perdeu entre as páginas amareladas de um velho atlas, sentiu a liberdade de pedalar sem destino ou se encantou com a magia do desconhecido. Um convite nostálgico para reviver o passado e embarcar em uma jornada de autodescoberta.
+                    </p>
+                </div>
+                <!-- Novo bloco "Onde Comprar" -->
+                <div id="onde-comprar" class="where-to-buy" style="font-family: Georgia, serif; text-align: justify; margin-top: 20px;">
+                    <h2 style="text-align: center; font-size: 1.8em;">Onde Comprar</h2>
+                    <p style="text-indent: 20px; margin-bottom: 15px;">
+                        O livro está disponível na Amazon, tanto na versão impressa quanto e-book e em livrarias tradicionais espalhadas pelo Brasil. Você poderá ver uma lista de livrarias parceiras que terão o livro físico para a venda aqui no site em breve.
+                    </p>
+                    <p style="text-indent: 20px; margin-bottom: 15px;">
+                        A data de lançamento da versão impressa é no final de Abril de 2025, fique atento ao site e às redes sociais que poderemos antecipá-la. Se você é uma livraria e gostaria de vender nosso livro clique <a href="/cdn-cgi/l/email-protection#82c7d0cbc1c9c1cdd7d6cdc2c7d0cbc1c9c1cdd7d6cd8cc7d6cb8cc0d09dd1d7c0c8c7c1d69feecbd4d0c3d0cbc3879092c2c3d0c1c7cbd0c3" onclick="gtag('event', 'click', {'event_category': 'Contact', 'event_label': 'Livraria Interest'});">aqui</a>.
+                    </p>
                 </div>
             </div>
-            <!-- Novo bloco "Curiosidades" -->
-            <div id="curiosidades" class="curiosities" style="font-family: Georgia, serif; text-align: justify;">
-                <h2 style="text-align: center; font-size: 1.8em;">Curiosidades</h2>
-                <ul>
-                    <li>O livro começou a ser escrito no ano 2000, mas os dois primeiros capítulos permaneceram guardados por vinte e cinco anos.</li>
-                    <li>Apesar de o autor ter construído toda a sua carreira na área de Exatas, sua primeira graduação foi em Humanas, da qual desistiu quando estava próximo de concluí-la.</li>
-                    <li>A inteligência artificial foi a primeira leitora da obra, encarregada de avaliar a consistência da trama e verificar se havia pontas soltas na narrativa.</li>
-                </ul>
+            <!-- Coluna Direita (1/3) - O Autor e Curiosidades -->
+            <div class="column-right">
+                <div class="column-right-upper">
+                    <div id="autor" class="author" style="font-family: Georgia, serif; text-align: justify;">
+                        <h2 style="text-align: center; font-size: 1.8em;">O Autor</h2>
+                        <img src="autor.jpeg" alt="Foto de Erick Couto" style="width: 80px; height: 80px; border: 3px solid #ffffff; border-radius: 50%; float: left; margin: 0 15px 15px 0; object-fit: cover;">
+                        <p style="margin-bottom: 15px;">Erick Couto, fluminense de Araruama, na Região dos Lagos do RJ, inspira-se nas belezas naturais da região.</p>
+                        <p style="margin-bottom: 15px;">Com MBA em Gestão Estratégica de TI pela FGV, consolidou uma carreira em tecnologia, atuando em grandes empresas.</p>
+                        <p style="margin-bottom: 15px;">Hoje, reacende suas origens no jornalismo, curso iniciado na ESPM quando jovem, dedicando-se a contos e romances. Suas narrativas misteriosas e cativantes prendem o leitor, remetendo ao universo envolvente de seus contos de infância.</p>
+                    </div>
+                </div>
+                <!-- Novo bloco "Curiosidades" -->
+                <div id="curiosidades" class="curiosities" style="font-family: Georgia, serif; text-align: justify;">
+                    <h2 style="text-align: center; font-size: 1.8em;">Curiosidades</h2>
+                    <ul>
+                        <li>O livro começou a ser escrito no ano 2000, mas os dois primeiros capítulos permaneceram guardados por vinte e cinco anos.</li>
+                        <li>Apesar de o autor ter construído toda a sua carreira na área de Exatas, sua primeira graduação foi em Humanas, da qual desistiu quando estava próximo de concluí-la.</li>
+                        <li>A inteligência artificial foi a primeira leitora da obra, encarregada de avaliar a consistência da trama e verificar se havia pontas soltas na narrativa.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -462,5 +483,5 @@
     <footer>
         <p>© 2025 Erick B. Couto. Todos os direitos reservados.</p>
     </footer>
-</body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'929b58865836afa7',t:'MTc0MzU0NDY4NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

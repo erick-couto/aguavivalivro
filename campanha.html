@@ -23,6 +23,12 @@
             display: block;
             margin: 0 auto 1.5rem;
         }
+        .sinna-logo {
+            max-height: 50px;
+            width: auto;
+            display: block;
+            margin: 0 auto;
+        }
         .description {
             font-size: 1.1rem;
             line-height: 1.6;
@@ -47,6 +53,13 @@
             font-size: 1.1rem;
             margin: 1.5rem 0;
             line-height: 1.8;
+        }
+        .location-box {
+            display: inline-block;
+            border: 3px solid #22c55e; /* Borda verde, espessura média */
+            border-radius: 1rem; /* Bordas arredondadas */
+            padding: 1rem;
+            background-color: transparent;
         }
         .pavilhao-verde {
             display: inline-block;
@@ -99,6 +112,9 @@
                 flex-direction: column;
                 gap: 0.5rem;
             }
+            .location-box {
+                padding: 0.75rem;
+            }
         }
     </style>
 </head>
@@ -111,10 +127,12 @@
         <p class="bienal-message">
             Bienalers,<br>
             venham nos visitar no<br>
-            <span class="pavilhao-verde">Pavilhão Verde</span><br>
-            <span class="calcada-literaria">Calçada Literária</span><br>
-            Estande <span class="estande-circle">6</span><br>
-            Editora Sinna
+            <span class="location-box">
+                <span class="pavilhao-verde">Pavilhão Verde</span><br>
+                <span class="calcada-literaria">Calçada Literária</span><br>
+                Estande <span class="estande-circle">6</span><br>
+                <img src="https://aguavivalivro.com.br/sinna.png" alt="Editora Sinna" class="sinna-logo">
+            </span>
         </p>
         <div class="link-container">
             <a href="https://www.instagram.com/aguavivalivro" target="_blank" class="btn btn-instagram">Siga @aguavivalivro</a>

@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Água Viva e a Rainha Neuza - Campanha Bienal</title>
+    <title>Água Viva e a Rainha Neuza - Bienal do Rio 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: #000;
+            color: #fff;
         }
         .container {
             max-width: 600px;
             margin: 0 auto;
             padding: 2rem 1rem;
             text-align: center;
+        }
+        .logo {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 1.5rem;
         }
         .description {
             font-size: 1.1rem;
@@ -47,10 +52,15 @@
             color: #22c55e; /* Verde vibrante */
             font-weight: 700;
         }
+        .link-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
         .home-link {
             font-size: 1rem;
-            margin-top: 1rem;
-            display: inline-block;
             color: #1a73e8;
             text-decoration: underline;
         }
@@ -61,27 +71,35 @@
             .container {
                 padding: 1.5rem 0.75rem;
             }
+            .logo {
+                max-width: 90%;
+            }
             .description, .bienal-message, .home-link {
                 font-size: 1rem;
             }
             .btn {
-                width: 100%;
-                margin-bottom: 1rem;
+                padding: 0.5rem 1rem;
+            }
+            .link-container {
+                flex-direction: column;
+                gap: 0.5rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="text-3xl font-bold mb-4">Água Viva e a Rainha Neuza</h1>
+        <img src="https://aguavivalivro.com.br/titulo-rainha.png" alt="Água Viva e a Rainha Neuza Logo" class="logo">
         <p class="description">
             Uma viagem de Minas ao litoral de Cabo Frio em uma jornada repleta de ação e aventura. Venha encarar uma tempestade no mar e acompanhar Gustavo a bordo da Rainha Neuza.
         </p>
         <p class="bienal-message">
             Bienalers, o livro está disponível na Calçada Literária, <span class="pavilhao-verde">Pavilhão Verde</span>, estande 6, da Editora Sinna!
         </p>
-        <a href="https://www.instagram.com/aguavivalivro" target="_blank" class="btn btn-instagram">Siga @aguavivalivro</a>
-        <a href="https://aguavivalivro.com.br" target="_blank" class="home-link">Quer conhecer mais sobre o livro? Clique aqui</a>
+        <div class="link-container">
+            <a href="https://www.instagram.com/aguavivalivro" target="_blank" class="btn btn-instagram">Siga @aguavivalivro</a>
+            <a href="https://aguavivalivro.com.br" target="_blank" class="home-link">Quer conhecer mais sobre o livro? Clique aqui</a>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,33 @@
+Política de Privacidade do Aplicativo Vindo
+
+Última atualização: 24 de agosto de 2025
+
+O aplicativo Vindo valoriza sua privacidade. Esta política explica como usamos a permissão da câmera e tratamos seus dados.
+
+Uso da Câmera
+
+O Vindo solicita acesso à câmera exclusivamente para escanear códigos QR, permitindo a confirmação de presença em eventos. Não usamos a câmera para nenhum outro propósito, e nenhuma imagem ou vídeo é capturado, armazenado ou compartilhado.
+
+Dados Coletados
+
+
+
+
+
+Códigos QR: Usados apenas para verificar presença em eventos.
+
+
+
+Não coletamos, armazenamos ou compartilhamos dados pessoais relacionados ao uso da câmera.
+
+Segurança
+
+Implementamos medidas para proteger os dados processados, garantindo que o uso do código QR seja seguro e limitado à funcionalidade de confirmação de presença.
+
+Alterações
+
+Podemos atualizar esta política periodicamente. Notificaremos você sobre mudanças significativas por meio do aplicativo ou outros canais.
+
+Contato
+
+Se tiver dúvidas sobre esta política, entre em contato pelo e-mail: [inserir e-mail de suporte].
